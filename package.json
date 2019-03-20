@@ -1,14 +1,15 @@
 {
   "name": "specificator",
-  "description": "It is framework designed to help you writing OpenAPI 3 documentation.",
-  "main": "./build/main.js",
-  "types": "./build/main.d.ts",
+  "description": "Framework for writing your OpenAPI 3 documentation in TypeScript.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "24.0.11",
-    "class-validator": "0.9.1",
     "coveralls": "3.0.3",
     "jest": "24.5.0",
+    "npm-publish-git-tag": "3.0.3",
     "ts-jest": "24.0.0",
     "tslint": "5.14.0",
     "typescript": "3.3.3333"
@@ -17,8 +18,19 @@
     "type": "git",
     "url": "git+https://github.com/neluzhin/specificator.git"
   },
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "dist",
+    "docs"
+  ],
+  "author": {
+    "name": "Petr Flaks",
+    "email": "petr@flaks.dev",
+    "url": "https://github.com/neluzhin"
+  },
+  "keywords": [
+    "openapi"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/neluzhin/specificator/issues"
   },
